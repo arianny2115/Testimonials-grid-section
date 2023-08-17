@@ -12,26 +12,33 @@ body {
 main#conteiner {
     background-color: hsl(210, 46%, 95%);
     display: grid;
-    grid-template-rows:  650px 400px  400px 500px 650px;
+    grid-template-rows:  593px 320px  306px 492px 582px;
+    gap: 30px;
     justify-items: center;
 }
 main#conteiner >section {
-   width: 350px;
-   padding: 20px;
-   height: 80%;
+  
+   width: 355px;
+   padding:30px;
    border-radius: 10px;
-   margin: 20px;
    box-shadow: 0px 5px  7px rgba(0, 0, 0, 0.349);
 }
+main#conteiner >section > div.ident {
+    margin-left: 20px;
+    display: inline-block;
+}
 main#conteiner >section > h1 {
+    font-size: 1.7em;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 main#conteiner >section > p {
     line-height: 25px;
 
 }
-main#conteiner >section > h1.name {
+main#conteiner >section.sec > div.ident > h1.name {
     margin-bottom: 0px;
+    color:hsl(0, 0%, 81%)
 }
 main#conteiner > section.sec > h1 {
     color:hsl(0, 0%, 81%)
@@ -39,28 +46,41 @@ main#conteiner > section.sec > h1 {
 main#conteiner > section.sec > p {
     color: hsla(0, 0%, 81%, 0.7);
 }
-main#conteiner > section.sec > p.graduate {
+main#conteiner > section.sec > div.ident > p.graduate {
+    
     color: hsla(0, 0%, 81%, 0.5);
 }
 /* secção escura */
-main#conteiner > section.dark > p.graduate{
+main#conteiner > section.dark > div.ident > p.graduate{
     color: hsl(217, 19%, 35%, 0.5);
+}
+main#conteiner > section.dark  > div.ident > p {
+    color: hsl(217, 19%, 35%, 0.7);
 }
 main#conteiner > section.dark > p {
     color: hsl(217, 19%, 35%, 0.7);
 }
-main#conteiner > section.dark > h1 {
+
+main#conteiner > section.dark > div.ident > h1 {
+    color:hsl(217, 19%, 35%)
+}
+main#conteiner > section.dark  > h1 {
     color:hsl(217, 19%, 35%)
 }
 
+
+
 section#daniel {
+    margin-top: 20px;
     background: hsl(263, 55%, 52%) url('../images/bg-pattern-quotation.svg' )no-repeat;
-    background-position: 80% 0%;
-    height: 440px;
-    margin: 20px;
+    background-size: 140px;
+    background-position: 93% 0%;
+
 }
 main#conteiner > section.sec > img {
-    border: 1px  solid white;
+    width: 40px;
+    height: 40px;
+    border: 2px  solid hsla(0, 0%, 81%, 0.5);
     border-radius: 50%;
 }
 
@@ -90,7 +110,4 @@ section#patrick > h1 {
 section#kira {
     background-color: hsl(0, 0%, 100%);
 
-}
-section#kira {
-    display: inline-block;
 }
