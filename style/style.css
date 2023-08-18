@@ -7,19 +7,23 @@
 }
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 16px;
+    display: block;
+    margin: auto;
 }
 main#conteiner {
+    
     background-color: hsl(210, 46%, 95%);
     display: grid;
-    grid-template-rows:  593px 320px  306px 492px 582px;
+    grid-template-rows:  593px 320px  306px 492px 630px;
+    grid-template-columns: auto 350px auto;
+    grid-template-areas: ". daniel ." ". jonathan ." ". jeanette ." ". patrick ." ". kira .";
     gap: 30px;
     justify-items: center;
 }
 main#conteiner >section {
-  
-   width: 355px;
-   padding:30px;
+    display: block;
+    margin: 0px;
+   padding: 20px;
    border-radius: 10px;
    box-shadow: 0px 5px  7px rgba(0, 0, 0, 0.349);
 }
@@ -28,7 +32,7 @@ main#conteiner >section > div.ident {
     display: inline-block;
 }
 main#conteiner >section > h1 {
-    font-size: 1.7em;
+
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -67,10 +71,23 @@ main#conteiner > section.dark > div.ident > h1 {
 main#conteiner > section.dark  > h1 {
     color:hsl(217, 19%, 35%)
 }
+main#conteiner > section.dark > img {
+    width: 40px;
+    height: 40px;
+    border: 2px  solid hsla(0, 0%, 81%, 0.5);
+    border-radius: 50%;
+}
+main#conteiner > section.sec > img#imgp {
+    width: 40px;
+    height: 40px;
+    border: 2px  solid hsl(263, 55%, 52%);
+    border-radius: 50%;
+}
 
 
 
 section#daniel {
+    grid-area: daniel;
     margin-top: 20px;
     background: hsl(263, 55%, 52%) url('../images/bg-pattern-quotation.svg' )no-repeat;
     background-size: 140px;
@@ -89,25 +106,35 @@ section#daniel > h1 {
     display: inline-block;
 }
 section#jonathan {
+    grid-area: jonathan;
     background-color: hsl(217, 19%, 35%);
 }
 section#jonathan > h1 {
+
     display: inline-block;
 }
 section#jeanette {
+    grid-area: jeanette;
     background-color: hsl(0, 0%, 100%);
 
 }
 section#jeanette > h1 {
+
     display: inline-block;
 }
 section#patrick {
+    grid-area: patrick;
     background-color: hsl(219, 29%, 14%)
 }
 section#patrick > h1 {
     display: inline-block;
 }
 section#kira {
+    grid-area: kira;
     background-color: hsl(0, 0%, 100%);
 
 }
+
+
+
+
