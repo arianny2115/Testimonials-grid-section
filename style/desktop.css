@@ -1,12 +1,14 @@
 @charset "UTF-8";
 main#conteiner {
-    width: 100vw;
-    grid-template-columns: 300px 200px 370px 370px ;
-    grid-template-rows: 300px 400px;
+
+
+    grid-template-columns: 300px 300px 300px 298px ;
+    grid-template-rows: 315px 290px;
     grid-template-areas:
      "daniel daniel jonathan kira" 
      "jeanette patrick patrick kira"
     ;
+    row-gap: 30px;
 
 
 
@@ -15,8 +17,8 @@ main#conteiner {
 
 main#conteiner >section > h1 {
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top:8px;
+    margin-bottom: 8px;
 }
 
 section#jonathan {
@@ -31,6 +33,10 @@ section#jeanette {
 }
 section#patrick {
     grid-area: patrick;
+}
+main#conteiner >section > p {
+    line-height: 20px;
+
 }
 
 

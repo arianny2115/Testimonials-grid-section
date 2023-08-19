@@ -6,16 +6,18 @@
     padding: 0px;
 }
 body {
+    
+    font: 9px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     display: block;
     margin: auto;
 }
 main#conteiner {
-    
+    padding: 30px;
     background-color: hsl(210, 46%, 95%);
     display: grid;
-    grid-template-rows:  593px 320px  306px 492px 630px;
-    grid-template-columns: auto 350px auto;
+    grid-template-rows:  593px 370px  306px 572px 710px;
+    grid-template-columns: auto 300px auto;
     grid-template-areas: ". daniel ." ". jonathan ." ". jeanette ." ". patrick ." ". kira .";
     gap: 30px;
     justify-items: center;
